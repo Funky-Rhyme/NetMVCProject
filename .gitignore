@@ -352,4 +352,8 @@ healthchecksdb
 MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
+<<<<<<< Updated upstream
 .ionide/
+=======
+.ionide/
+>>>>>>> Stashed changes
