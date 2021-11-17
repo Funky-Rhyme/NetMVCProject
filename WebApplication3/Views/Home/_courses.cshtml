@@ -1,0 +1,76 @@
+﻿@{
+  Layout = null;
+  List<string> courses = ViewBag.courses;
+  int courseIndex = (int)Convert.ToInt64(courses[0]);
+}
+
+@for (int i = 0; i < courses.Count; i++)
+{
+    {
+        {
+      <div class="course-container">
+        <h2>Cеместр @(courseIndex).</h2>
+        <div class="section">
+          <span>
+            <label>Раздел 1.</label>
+            <input type="text" class="form-control" placeholder="Введите имя раздела" />
+          </span>
+          <br>
+
+          <div class="topic">
+            <span>
+              <label>Тема 1.</label>
+              <input type="text" class="form-control" placeholder="Введите имя темы" />
+              <textarea type="text" class="form-control" placeholder="Введите описание темы" />
+            </span>
+          </div>
+
+          <div class="btn btn-primary btn-sm add-topic">Добавить тему</div>
+        </div>
+        <div class="btn btn-primary btn-lg addSection">Добавить раздел</div>
+      </div>
+        }
+        courseIndex++;
+    }
+}
+
+<div class="section-template">
+  <div class="section">
+    <span>
+      <label></label><input type="text" class="form-control" placeholder="Введите имя раздела" />
+    </span>
+    <div class="btn btn-primary btn-sm del-section">Удалить</div>
+    <br>
+
+    <div class="topic">
+      <span>
+        <label>Тема 1.</label>
+        <input type="text" class="form-control" placeholder="Введите имя темы" />
+        <textarea type="text" class="form-control" placeholder="Введите описание темы" />
+      </span>
+    </div>
+
+    <div class="btn btn-primary btn-sm add-topic">Добавить тему</div>
+  </div>
+</div>
+
+<div class="topic-template">
+  <div class="topic">
+    <table>
+      <tr>
+        <td>
+          <label>Тема 1.</label>
+          <input type="text" class="form-control" placeholder="Введите имя темы" />
+        </td>
+        <td>
+          <div class="btn btn-primary btn-sm del-topic">Удалить</div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea type="text" class="form-control" placeholder="Введите описание темы" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

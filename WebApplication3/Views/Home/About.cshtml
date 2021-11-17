@@ -1,0 +1,35 @@
+﻿@model WebApplication3.Models.Form
+
+<h2>Генерирование документа</h2>
+<h3>@ViewBag.Message</h3>
+
+<div class="form-container">
+  <form>
+    <table>
+      <tr><td><label>Направление</label></td></tr>
+      <tr>
+        <td>
+          @Html.TextBox("Discipline", Model.Discipline, new { placeholder = "Введите имя направления", @class = "form-control" })
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label>Дисциплина</label>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          @Html.DropDownListFor(model => model.Directions, null, "-- Выберите направление --", new { @class = "form-control" })
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="cources-container"></div>
+        </td>
+      </tr>
+    </table>
+  </form>
+</div>
+<div class="button-container">
+  <div class="btn btn-primary btn-lg generate">Сгенерировать файл word</div>
+</div>

@@ -1,0 +1,83 @@
+﻿body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+  white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select {
+  max-width: 400px;
+}
+
+.form-container, .button-container {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+.form-container label {
+  margin: 20px 0 5px 10px;
+}
+
+.form-container .course-container {
+  background-color: #eeeeee;
+  padding: 1px 20px 20px 20px;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+
+  .form-container .course-container .add-section {
+    width: 100%;
+  }
+
+  .form-container .course-container .section {
+    background-color: white;
+    padding: 0 10px 11px 15px;
+    border-radius: 7px;
+    margin-bottom: 15px;
+  }
+
+    .form-container .course-container .section .add-topic {
+      width: 100%;
+    }
+
+    .form-container .course-container .section input {
+      width: 300px;
+      display: initial;
+      margin-left: 10px;
+    }
+
+    .form-container .course-container .section .topic {
+      background-color: #eeeeee;
+      /* background-color: white; */
+      padding: 10px 10px 11px 15px;
+      margin-top: 13px;
+      border-radius: 7px;
+      margin-bottom: 15px;
+    }
+
+      .form-container .course-container .section .topic textarea {
+        margin-top: 12px;
+      }
+
+.section-template, .topic-template {
+  display: none;
+}
+
+.topic .del-topic {
+  margin-top: 14px;
+  margin-left: 10px;
+}
